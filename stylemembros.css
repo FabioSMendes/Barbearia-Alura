@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#FEFEFE, #888888);    display: block ;
+    font-family: Poppins;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    border: 0;
+}
+
+.container-cadastro {
+    background-color: #2F3644;
+    border-radius: 5px;
+    border: 2px solid #3E445B;
+    width: 450px;
+    max-width: 100%;
+}
+
+.header {
+    padding: 30px 40px;
+}
+
+.header h2 {
+    font-weight: 600;
+    color: #ACBAE1;
+    font-size: 30px;
+}
+
+.form {
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #828CAD;
+}
+
+.form-control input {
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    outline: 0;
+
+    display: block;
+
+    font-size: 14px;
+
+    width: 100%;
+    padding: 15px;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+.form button {
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+
+.container-central {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.formulario {
+    margin-top: 2rem;
+}
+
+.formulario__legenda {
+    font-size: var(--fonte-tamanho-formulario-fieldset);
+
+    margin-bottom: 1rem;
+}
+
+.input-container {
+    font-weight: var(--fonte-peso-input);
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.input {
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--cor-secundaria);
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+}
+
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--fonte-tamanho-input-label);
+
+    transition: all .25s;
+}
+
+.input:not(:placeholder-shown) + .input-label, .input:focus + .input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all .25s;
+}
+
+.input-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input {
+    border: 1px solid var(--cor-aviso);
+    border-radius: 7px;
+}
+
+.input-container--invalido .input-label {
+    color: var(--cor-aviso);
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.textarea {
+    box-sizing: border-box;
+    border: 1px solid;
+    padding: 0.5rem;    
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+}
+
+.textarea-container {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.textarea::placeholder {
+    visibility: hidden;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.textarea-label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: var(--fonte-tamanho-input-label);
+    transition: all 0.25s;
+}
+
+.textarea:not(:placeholder-shown) + .textarea-label, .textarea:focus + .textarea-label {
+    font-size: 0.875rem;
+    top: -1.25rem;
+    transition: all 0.25s;
+}
+
+.textarea-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalido .textarea {
+    border: 1px solid var(--cor-aviso);
+}
+
+.textarea-container--invalido .textarea-label {
+    color: var(--cor-aviso);
+}
+
+.textarea-mensagem-erro {
+    display: none;
+}
+
+.textarea-container--invalido .textarea-mensagem-erro {
+    display: block;
+    color: var(--cor-aviso);
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#message {
+    color: #DB5A5A;
+}
