@@ -335,10 +335,6 @@ td, th {
 	color: #db5a5a;
 }
 
-form-control.error small {
-	visibility: visible;
-}
-
 
 
 @media screen and (max-width: 480px) {
